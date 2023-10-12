@@ -1,0 +1,17 @@
+{
+    "name": "OpenYT Ad Blocker",
+    "version": "0.1",
+    "manifest_version": 3,
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+	},
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "css": [],
+            "js": ["content.js"]
+        }
+    ]
+}
